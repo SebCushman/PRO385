@@ -36,10 +36,10 @@ public class Player : MonoBehaviour
 
         Gamepad gamepad = Gamepad.current;
 
-        if (gamepad == null) return;
-
-        //input = gamepad.leftStick.ReadValue();
         transform.Translate(input * speed * Time.deltaTime);
+
+        if (gamepad == null) return;
+        //input = gamepad.leftStick.ReadValue();
         
         if (gamepad.buttonSouth.wasPressedThisFrame)
         {
