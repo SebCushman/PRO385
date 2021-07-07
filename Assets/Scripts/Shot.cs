@@ -12,8 +12,8 @@ public class Shot : MonoBehaviour
         Destroy(gameObject, lifetime);
     }
 
-    void Update()
-    {
-        transform.Translate(Vector2.right * speed * Time.deltaTime);
-    }
+    //void Update()
+    //{
+    //    transform.Translate(Vector2.right * speed * Time.deltaTime);
+    //}
 }

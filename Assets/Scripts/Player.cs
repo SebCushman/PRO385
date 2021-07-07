@@ -46,11 +46,22 @@ public class Player : MonoBehaviour
             // fire action
             OnFire();
         }
+
+        if (gamepad.buttonEast.wasPressedThisFrame)
+        {
+            // jump action
+            OnJump();
+        }
     }
 
     public void OnFire()
     {
         Instantiate(shot, transform.position, Quaternion.identity);
+    }
+
+    public void OnJump()
+    {
+
     }
 
     public void OnMove(InputValue inputValue) 

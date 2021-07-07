@@ -1,0 +1,33 @@
+{
+    "name": "GyroControls",
+    "maps": [
+        {
+            "name": "Gyro",
+            "id": "45226442-284f-4762-96c7-1b4e4cc44a7b",
+            "actions": [
+                {
+                    "name": "Attitude",
+                    "type": "PassThrough",
+                    "id": "7bd3c97c-44ca-4083-8a1e-651883c4850b",
+                    "expectedControlType": "Quaternion",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "000fe905-e071-4a6c-866e-56e05bc49053",
+                    "path": "<AttitudeSensor>/attitude",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Attitude",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
